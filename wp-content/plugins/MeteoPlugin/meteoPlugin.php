@@ -3,22 +3,25 @@
 Plugin Name: Plugin Météo
 Description: Affiche la météo actuelle à l'aide de l'API OpenWeatherMap.
 Version: 1.0
-Author: Ton Nom
+Author: Matteo
 */
 
-function afficher_meteo($atts) {
-    // Récupère la ville depuis les attributs ou utilise la ville par défaut
-    $atts = shortcode_atts(
-        array(
-            'ville' => 'Paris', // Ville par défaut
-        ),
-        $atts,
-        'meteo'
-    );
+function get_weather_donne($city = 'Paris') {
+    $api_key = 'ac74dab4c2ae2f6d02ed66de07cc0c28'; // Remplace TA_CLE_API par ta vraie clé API.
+    $api_url = "http://api.openweathermap.org/data/2.5/weather?q={$city}&appid={$api_key}&units=metric&lang=fr";
 
-    // Clé API OpenWeatherMap
-    $api_key = 'ac74dab4c2ae2f6d02ed66de07cc0c28'; // Remplace par ta clé API
-    $ville = sanitize_text_field($atts['ville']);
-    $url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric&lang=fr`;
+    $response = wp_remote_get($api_url);
+    
+    if (is_wp_error($response)) {
+        return 'Erreur : Impossible de récupérer les données météo';
+    }
+    
+    $body = wp_remote_retrieve_body($response);
+    $data = json_decode($body, true);
 
+    if ($data['cod'] != 200) {
+        return 'Erreur : Ville non trouvée';
+    }
+    
+    return $data;
 }
