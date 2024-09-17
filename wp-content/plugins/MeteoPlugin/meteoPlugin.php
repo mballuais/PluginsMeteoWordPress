@@ -7,7 +7,7 @@ Author: Matteo
 */
 
 function get_weather_donne($city = 'Paris') {
-    $api_key = 'ac74dab4c2ae2f6d02ed66de07cc0c28'; // Remplace TA_CLE_API par ta vraie clé API.
+    $api_key = 'ac74dab4c2ae2f6d02ed66de07cc0c28'; 
     $api_url = "http://api.openweathermap.org/data/2.5/weather?q={$city}&appid={$api_key}&units=metric&lang=fr";
 
     $response = wp_remote_get($api_url);
