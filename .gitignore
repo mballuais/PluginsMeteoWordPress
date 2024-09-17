@@ -23,3 +23,5 @@ wp-config.php
 *.log
 
 /.htaccess
+
+*:Zone.Identifier
