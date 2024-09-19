@@ -107,7 +107,7 @@ function plugin_meteo_display_wind_render() {
 function plugin_meteo_settings_section_callback() {
     echo __('Configurer les paramètres du Plugin Météo.', 'plugin-meteo');
 }
-
+  
 function plugin_meteo_options_page() {
     ?>
     <form action='options.php' method='post'>
