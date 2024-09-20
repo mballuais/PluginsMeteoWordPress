@@ -3,6 +3,7 @@
 ## Description
 
 Le **Plugin Météo WordPress** permet d'afficher la météo actuelle d'une ville recherchée directement sur une page ou dans une zone de widgets de votre site WordPress. Ce plugin utilise l'API OpenWeatherMap avec une clé API déjà configurée, donc pas besoin d'ajouter la vôtre.
+![Capture4](https://github.com/user-attachments/assets/5d306561-5c11-46ce-aedc-12210f31110e)
 
 ## Fonctionnalités
 
