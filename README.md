@@ -24,6 +24,7 @@ Le **Plugin Météo WordPress** permet d'afficher la météo actuelle d'une vill
 3. Cliquez sur le bouton **Téléverser une extension** et sélectionnez le fichier ZIP du plugin.
 
 4. Installez et activez le plugin.
+![Capture2](https://github.com/user-attachments/assets/6591140b-8763-45c8-b64d-0108891fd82a)
 
 ## Réglages du Plugin
 
@@ -35,7 +36,8 @@ Le plugin est préconfiguré avec une clé API OpenWeatherMap. Aucun réglage n'
     - Définir la ville par défaut à afficher si aucune recherche n'est effectuée.
     - Personnaliser l'unité de température (Celsius ou Fahrenheit).
     - Activer ou désactiver certains paramètres météo (par exemple, l'affichage de l'humidité ou de la vitesse du vent).
-    
+    ![Capture](https://github.com/user-attachments/assets/cb12be8e-b3e1-4dc0-b5b9-2dd5b3d6f745)
+
 3. Enregistrez les modifications après chaque ajustement.
 
 ## Utilisation
